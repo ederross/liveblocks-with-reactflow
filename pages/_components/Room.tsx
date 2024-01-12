@@ -1,11 +1,8 @@
-import React, { useEffect, useMemo, useState } from "react";
-import ReactFlow, { Controls, MiniMap } from "reactflow";
-import useStore from "../../src/store";
-import { useRouter } from "next/router";
-import styles from "../index.module.css";
-import { RoomProvider, useMyPresence, useOthers } from "liveblocks.config";
-import { ClientSideSuspense } from "@liveblocks/react";
 import Cursor from "components/Cursor";
+import { useMyPresence, useOthers } from "liveblocks.config";
+import ReactFlow, { Controls } from "reactflow";
+import useStore from "../../src/store";
+import styles from "../index.module.css";
 
 const COLORS = [
   "#E57373",
@@ -18,7 +15,7 @@ const COLORS = [
   "#7986CB",
 ];
 
-export function Room() {
+export default function  Room() {
   const {
     liveblocks: { enterRoom, leaveRoom, isStorageLoading },
     nodes,
