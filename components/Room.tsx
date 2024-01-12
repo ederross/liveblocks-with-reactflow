@@ -1,8 +1,8 @@
 import Cursor from "components/Cursor";
 import { useMyPresence, useOthers } from "liveblocks.config";
 import ReactFlow, { Controls } from "reactflow";
-import useStore from "../../src/store";
-import styles from "../index.module.css";
+import useStore from "../src/store";
+import styles from "../pages/index.module.css";
 
 const COLORS = [
   "#E57373",

@@ -5,7 +5,7 @@ import { useEffect, useMemo } from "react";
 import useStore from "../src/store";
 import styles from "./index.module.css";
 
-import Room  from "./_components/Room";
+import Room  from "../components/Room";
 
 /**
  * This example shows how to build a collaborative flowchart
