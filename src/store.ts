@@ -65,7 +65,7 @@ const useStore = create<WithLiveblocks<FlowState, {}, EnsureJson<Storage>>>()(
         set({
           edges: addEdge(connection, get().edges),
         });
-      },
+      }
     }),
     {
       // Add Liveblocks client
